@@ -12,7 +12,7 @@ Este projeto é uma automação desenvolvida em Python para resolver o desafio d
 
 * [Python]
 * [Selenium]
-* [EasyOCR](
+* [EasyOCR]
 * [Pandas]
 * [Regex (re)]
 

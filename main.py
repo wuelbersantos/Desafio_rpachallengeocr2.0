@@ -3,9 +3,6 @@ from src.web_scraper import acessar_pagina_desafio, raspar_dados_tabela, baixar_
 from src.ocr_processor import extrairDadosFaturas
 from src.data_handler import salvar_dados_em_csv
 
-
-
-
 if __name__ == "__main__":
     driver=inicializar_navegador()
     acessar_pagina_desafio(driver)
@@ -33,7 +30,6 @@ if __name__ == "__main__":
 
 
     for i in range(len(lista_resultados_finais)):
-       # print(f" item {i} id {dados_extraidos["total_due"]} ")
         print(f"Dados: {i+1} {lista_resultados_finais[i]}")
         print(f"*" * 50)
 
