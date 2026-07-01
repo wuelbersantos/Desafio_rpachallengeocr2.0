@@ -1,10 +1,7 @@
-from web_scraper import acessar_pagina_desafio
-from web_scraper import raspar_dados_tabela
-from web_scraper import baixar_fatura_local
-from ocr_processor import extrairDadosFaturas
-from web_browser import inicializar_navegador, FecharNagevador
-from data_handler import salvar_dados_em_csv
-
+from src.web_browser import inicializar_navegador, FecharNagevador
+from src.web_scraper import acessar_pagina_desafio, raspar_dados_tabela, baixar_fatura_local
+from src.ocr_processor import extrairDadosFaturas
+from src.data_handler import salvar_dados_em_csv
 
 
 
@@ -37,13 +34,9 @@ if __name__ == "__main__":
 
     for i in range(len(lista_resultados_finais)):
        # print(f" item {i} id {dados_extraidos["total_due"]} ")
-        print(f"dados: {i+1} {lista_resultados_finais[i]}")
+        print(f"Dados: {i+1} {lista_resultados_finais[i]}")
         print(f"*" * 50)
-        #dados_extraidosdados_extraidos["total_due"]
 
-
-
-    ##print(lista_resultados_finais)
 
 
 
